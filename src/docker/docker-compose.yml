@@ -1,0 +1,11 @@
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: sachin
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: test-db
+    ports:
+      - 5432:5432
